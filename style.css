@@ -10,7 +10,7 @@
 body{
     background-color: #22242a;
 }
-/* Shared Styles (Main & Image Search) */
+/* Shared Styles (Main, Image Search and Advanced Search) */
 /* Nav Links */
 nav{
     margin: 1.5rem;
@@ -96,4 +96,63 @@ nav a:hover{
     position: absolute;
     top: 110px;
     left: 240px;
+}
+
+/* Advanced Search Styling */
+.advanced-page .boogle-logo-advanced{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    display: inline;
+    margin-left: 2rem;
+}
+.advanced-page nav ul{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Advanced Page Main Content */
+.adv-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 40px;
+    row-gap: 40px;
+}
+.adv-card h1,h2{
+    color: #bfbfbf;
+    font-weight: 300;
+}
+.input-grid {
+    display: grid;
+    grid-template-columns: 200px 500px;
+    column-gap: 20px;
+    row-gap: 30px;
+    align-items: center;
+}
+.input-grid p {
+    color: #bfbfbf;
+    font-size: 0.85rem;
+}
+.adv-card input[type="text"]{
+    background-color: #22242a;
+    border: 1px #9e9e9e solid;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: #bebebe;
+}
+.adv-card input[type="text"]:focus-visible{
+    border: 1px #a8c7fa solid;
+}
+.adv-search-btn{
+    grid-column: 2;
+    justify-self: flex-end;
+    background-color: #a8c7fa;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
 }
