@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global Styles */
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +10,7 @@
 body{
     background-color: #22242a;
 }
+/* Shared Styles (Main & Image Search) */
 /* Nav Links */
 nav{
     margin: 1.5rem;
@@ -31,7 +34,7 @@ nav a:hover{
     display: flex;
     justify-content: center;
 }
-.card .logo{
+.card .boogle-logo{
     color: white;
     font-size: 5.5rem;
     font-weight: 600;
@@ -76,9 +79,21 @@ nav a:hover{
     transition: all 0.3s ease;
 }
 .card input[type="submit"]:hover{
-    border: 1px #4d5156 solid;
+    border: 1px #5f6368 solid;
 }
 .card{
     text-align: center;
     width: 50%;
+}
+/* Image Search Specific Style */
+.boogle-img-logo{
+    display: inline-block;
+    position: relative;
+}
+.boogle-img-logo .sub-text{
+    color: #3a6cc2;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 110px;
+    left: 240px;
 }
