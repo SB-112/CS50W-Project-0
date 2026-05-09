@@ -133,7 +133,7 @@ nav a:hover{
     row-gap: 30px;
     align-items: center;
 }
-.input-grid p {
+.input-grid label {
     color: #bfbfbf;
     font-size: 0.85rem;
 }
